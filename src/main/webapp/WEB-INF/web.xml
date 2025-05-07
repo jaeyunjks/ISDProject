@@ -1,7 +1,43 @@
-<!DOCTYPE web-app PUBLIC
- "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
- "http://java.sun.com/dtd/web-app_2_3.dtd" >
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+             http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
 
-<web-app>
-  <display-name>Archetype Created Web Application</display-name>
+  <display-name>Shipment Management System</display-name>
+
+  <!-- Define servlet for UpdateShipmentServlet -->
+  <servlet>
+    <servlet-name>UpdateShipmentServlet</servlet-name>
+    <servlet-class>uts.isd.controller.UpdateShipmentServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>UpdateShipmentServlet</servlet-name>
+    <url-pattern>/UpdateShipmentServlet</url-pattern>
+  </servlet-mapping>
+
+  <!-- Define servlet for ViewShipmentServlet -->
+  <servlet>
+    <servlet-name>ViewShipmentServlet</servlet-name>
+    <servlet-class>uts.isd.controller.ViewShipmentServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ViewShipmentServlet</servlet-name>
+    <url-pattern>/ViewShipmentServlet</url-pattern>
+  </servlet-mapping>
+
+  <!-- Define servlet for DeleteShipmentServlet -->
+  <servlet>
+    <servlet-name>DeleteShipmentServlet</servlet-name>
+    <servlet-class>uts.isd.controller.DeleteShipmentServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>DeleteShipmentServlet</servlet-name>
+    <url-pattern>/DeleteShipmentServlet</url-pattern>
+  </servlet-mapping>
+
 </web-app>
