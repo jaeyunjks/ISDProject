@@ -1,0 +1,6 @@
+0:0:0:0:0:0:0:1 - - [01/May/2025:22:43:52 +1000] "GET /ISDProject HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [01/May/2025:22:43:52 +1000] "GET /ISDProject/ HTTP/1.1" 200 3453
+0:0:0:0:0:0:0:1 - - [01/May/2025:22:43:52 +1000] "GET /ISDProject/style.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [01/May/2025:22:43:53 +1000] "GET /ISDProject/register.jsp HTTP/1.1" 500 3214
+0:0:0:0:0:0:0:1 - - [01/May/2025:22:43:55 +1000] "GET /ISDProject/register.jsp HTTP/1.1" 500 2833
+0:0:0:0:0:0:0:1 - - [01/May/2025:22:43:57 +1000] "GET /ISDProject/register.jsp HTTP/1.1" 500 2833
