@@ -7,7 +7,7 @@ import java.util.*;
 
 public class ShipmentDBManager {
     private final Connection conn;
-    
+
     public ShipmentDBManager() throws SQLException {
         // Use proper connection string for your database
         this.conn = DriverManager.getConnection("jdbc:sqlite:yourDatabasePath.db");  // Update with your database path or URL

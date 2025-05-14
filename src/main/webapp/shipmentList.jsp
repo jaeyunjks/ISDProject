@@ -1,6 +1,7 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ page import="uts.isd.model.Shipment" %>
 <%@ page import="java.util.List" %>
+<%int orderId = Integer.parseInt(request.getParameter("orderId"));%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,7 +19,7 @@
 %>
 <table border="1">
     <thead>
-    <tr>
+    <tr class="">
         <th>Shipment ID</th>
         <th>Order ID</th>
         <th>Shipping Method</th>
@@ -63,6 +64,6 @@
     }
 %>
 
-<p><a href="index.jsp">Back to Home</a></p>
+<p class="buttons"><a href="index.jsp">Back to Home</a></p>
 </body>
 </html>

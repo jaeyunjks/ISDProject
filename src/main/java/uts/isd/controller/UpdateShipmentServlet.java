@@ -8,7 +8,7 @@ import jakarta.servlet.http.*;
 import java.io.IOException;
 import java.sql.SQLException;
 
-@WebServlet("/UpdateShipmentServlet")
+@WebServlet
 public class UpdateShipmentServlet extends HttpServlet {
 
     @Override
@@ -39,14 +39,14 @@ public class UpdateShipmentServlet extends HttpServlet {
             dbManager.updateShipment(shipment);  // Call the DB method to update shipment
 
             // If successful, redirect to the shipment list page
-            response.sendRedirect("shipmentList.jsp");  // Redirect to a success page
+            response.sendRedirect("/Users/thefiesphere/Documents/GitHub/ISDProject/src/main/webapp/shipmentList.jsp");  // Redirect to a success page
 
         } catch (SQLException e) {
             // If an error occurs, log the exception and show an error page
             e.printStackTrace();
             request.setAttribute("error", "Error updating shipment: " + e.getMessage());
-            RequestDispatcher dispatcher = request.getRequestDispatcher("error.jsp");
-            dispatcher.forward(request, response);  // Forward to the error page
+
+
         } finally {
             try {
                 if (dbManager != null) {
